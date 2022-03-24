@@ -8,7 +8,7 @@ def ros2_deps(python_interpreter, python_requirements_lock):
     if not native.existing_rule("rules_ros2_pip_deps"):
         pip_parse(
             name = "rules_ros2_pip_deps",
-            python_interpreter = python_interpreter,
+            python_interpreter_target = python_interpreter,
             requirements_lock = python_requirements_lock,
         )
 

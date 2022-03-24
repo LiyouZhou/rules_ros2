@@ -92,7 +92,7 @@ def ros2_repositories():
 
     maybe(
         http_archive,
-        name = "fmt",
+        name = "ros2_rules_fmt",
         build_file = "@com_github_mvukov_rules_ros2//repositories:fmt.BUILD.bazel",
         sha256 = "5cae7072042b3043e12d53d50ef404bbb76949dad1de368d7f993a15c8c05ecc",
         strip_prefix = "fmt-7.1.3",
@@ -119,7 +119,7 @@ def ros2_repositories():
 
     maybe(
         http_archive,
-        name = "libyaml",
+        name = "ros2_rules_libyaml",
         build_file = "@com_github_mvukov_rules_ros2//repositories:libyaml.BUILD.bazel",
         sha256 = "2c103fc473e904c6fe7580277f1fa16b6d716e54d5e3f32a8913c4850ae03b3f",
         strip_prefix = "libyaml-acd6f6f014c25e46363e718381e0b35205df2d83",

@@ -10,7 +10,7 @@ cc_library(
         "rcl_yaml_param_parser/src/impl/*.h",
     ]),
     deps = [
-        "@libyaml//:yaml",
+        "@ros2_rules_libyaml//:yaml",
         "@ros2_rcutils//:rcutils",
     ],
     visibility = ["//visibility:public"],
